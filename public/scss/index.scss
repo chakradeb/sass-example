@@ -1,0 +1,63 @@
+$heading-top-margin: 5vh;
+$heading-width: 150vh;
+$heading-height: 20vh;
+$main-height: 100vh - ($heading-height * 2);
+$font-size: 100px;
+$font-stack-head: 'Lobster', cursive;
+$font-stack-normal: 'Bree Serif', serif;
+$radius: 80px;
+$none: 0px;
+$padding: 30px;
+$img-height: 100px;
+$img-width: 250px;
+$bg-color: #b06623;
+$background: #4d2a07;
+
+body {
+  background-color: $background;
+}
+
+header {
+  background-color: $bg-color;
+  width: $heading-width;
+  height: $heading-height;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: $heading-top-margin;
+  border-radius: $none $radius $none $radius;
+  img {
+    position: absolute;
+    height: $img-height;
+    width: $img-width;
+    padding-top: $padding;
+    padding-left: $padding * 3;
+  }
+}
+
+h3 {
+  margin: auto;
+  font-family: $font-stack-head;
+  font-size: $font-size;
+  text-align: right;
+  padding-top: $padding;
+  padding-right: $padding * 5;
+}
+
+main {
+  background-color: $bg-color;
+  width: $heading-width;
+  height: $main-height;
+  border: 2px solid black;
+  margin: auto;
+  border-radius: $none $radius $none $radius;
+  margin-top: $heading-height * 0.5;
+}
+
+.data {
+  margin: $padding * 2;
+  padding: $padding;
+  font-family: $font-stack-normal;
+  font-size: $font-size * 0.3;
+  height: $main-height/1.5;
+  overflow-y: scroll;
+}
